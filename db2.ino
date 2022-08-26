@@ -50,8 +50,8 @@ void loop ()
 
     peakToPeak = signalMax - signalMin;                    // amplitude pico a pico 
     int db = map(peakToPeak, 20, 900, 49.5, 90);             // Calibrando para decibeis
-    Serial.printIn("Volume (dB): ");
-    Serial.printIn(db);
+    Serial.println("Volume (dB): ");
+    Serial.println(db);
     
     if (db <= 60) // Som normal / baixo
     {
